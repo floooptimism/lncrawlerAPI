@@ -1,2 +1,9 @@
-# lncrawlerAPI
- Light Novel crawler backend
+#### Light Novel Crawler API
+
+##### Software Dependencies
+
+- Cheerio - HTML Parser
+
+- Axios - HTTP Client
+
+- Express - Server Framework
