@@ -1,6 +1,8 @@
+const { Cheerio } = require("cheerio");
+
 class InformationExtractor {
-    constructor(htmlParser){
-        this.htmlParser = htmlParser;
+    static htmlParser = null;
+    constructor(){
         this.parsedHTML = null;
     }
 
@@ -37,3 +39,5 @@ class InformationExtractor {
     getNovelChapterContent(){}
 
 }
+
+module.exports = InformationExtractor;
