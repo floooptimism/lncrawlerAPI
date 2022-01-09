@@ -1,7 +1,7 @@
-class InterfacePageFetcher{
+class PageFetcher{
     static httpClient = null;
     
     async fetchPage(url){}
 }
 
-module.exports = InterfacePageFetcher;
+module.exports = PageFetcher;

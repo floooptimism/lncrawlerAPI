@@ -2,7 +2,8 @@ const { Cheerio } = require("cheerio");
 
 class InformationExtractor {
     static htmlParser = null;
-    constructor(){
+    constructor(source){
+        this.source = source;
         this.parsedHTML = null;
     }
 
