@@ -3,8 +3,12 @@ class Scraper {
     static queryString = "";
 
     constructor(informationExtractor, pageFetcher){
-        this.informationExtractor = informationExtractor;
-        this.pageFetcher = pageFetcher;
+        this.informationExtractor = new informationExtractor(this.constructor.sourceURL);
+        this.pageFetcher = new pageFetcher();
+    }
+
+    static getSource(){
+        return this.sourceURL;
     }
 
     async getNovelInfo(novelURL){
