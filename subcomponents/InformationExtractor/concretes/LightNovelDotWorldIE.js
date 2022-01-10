@@ -1,4 +1,3 @@
-const { compareDocumentPosition } = require("domutils");
 const InformationExtractor = require("../InformationExtractor");
 
 class LightNovelDotWorldIE extends InformationExtractor {
@@ -8,8 +7,17 @@ class LightNovelDotWorldIE extends InformationExtractor {
         super(source);
     }
 
+    /**
+     * Parses html
+     * @param {String} html 
+     * @returns true if html parsed is valid, false otherwise
+     */
     parseHTML(html){
+        if(html == null){
+            return null;
+        }
         this.parsedHTML = this.constructor.htmlParser.load(html);
+        return true;
     }
 
     getNovelSearchResults(){

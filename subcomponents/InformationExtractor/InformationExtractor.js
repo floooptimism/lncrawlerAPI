@@ -9,6 +9,8 @@ class InformationExtractor {
 
     parseHTML(html){}
 
+    getNovelSearchResults(){}
+
     getNovelInformation(){}
 
     getNovelName(){}
