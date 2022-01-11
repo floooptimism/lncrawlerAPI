@@ -11,6 +11,10 @@ class Scraper {
         return this.sourceURL;
     }
 
+    getSource(){
+        return this.constructor.getSource();
+    }
+
     async getNovelInfo(novelURL){
         // get novel information and return object
     }
