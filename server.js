@@ -18,6 +18,9 @@ const cors = require('cors');
     app.use(compression());
 
 // routes
+    app.get('/', (req, res) => {
+        res.send('henlo worl');
+        });
     app.get('/novelinfo',middlewareCheckParameter('scraperSource'), 
                         middlewareCheckParameter('novelURL'), 
                         novelinforoute);

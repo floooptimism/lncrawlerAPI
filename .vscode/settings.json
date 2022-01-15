@@ -1,0 +1,29 @@
+{
+    "jupyter.jupyterServerType": "remote",
+    "favorites.resources": [
+        {
+            "filePath": "subcomponents/InformationExtractor",
+            "group": "Default"
+        },
+        {
+            "filePath": "components/Scraper",
+            "group": "Default"
+        },
+        {
+            "filePath": "subcomponents/PageFetcher",
+            "group": "Default"
+        },
+        {
+            "filePath": "tests",
+            "group": "Default"
+        },
+        {
+            "filePath": "routes",
+            "group": "Default"
+        },
+        {
+            "filePath": "components/ScraperManager",
+            "group": "Default"
+        }
+    ]
+}
