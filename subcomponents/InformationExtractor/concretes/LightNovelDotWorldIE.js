@@ -35,7 +35,10 @@ class LightNovelDotWorldIE extends InformationExtractor {
             novelResult.latestChapter = infos.eq(1).text();
             novelResult.description = infos.eq(2).text();
             novelResult.url = this.source + infos.eq(3).children().last().attr("href");
-
+            
+            infos = ${element).find(".book_info_l > img");
+            novelResult.cover = infos.attr( this.source + "src");
+            
             searchResult.push(novelResult);
         })
 
