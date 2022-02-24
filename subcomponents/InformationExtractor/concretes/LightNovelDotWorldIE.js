@@ -50,7 +50,7 @@ class LightNovelDotWorldIE extends InformationExtractor {
     getNovelInformation(){
         let novelInformation = {};
 
-        novelInformation.name = this.getNovelName();
+        novelInformation.title = this.getNovelName();
         novelInformation.author = this.getNovelAuthor();
         novelInformation.cover = this.getNovelCover();
         novelInformation.description = this.getNovelDescription();
