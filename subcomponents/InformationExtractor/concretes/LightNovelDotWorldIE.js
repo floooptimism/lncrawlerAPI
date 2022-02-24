@@ -62,6 +62,7 @@ class LightNovelDotWorldIE extends InformationExtractor {
         novelInformation.lastChapter = this.getNovelLastChapter();
         novelInformation.views = this.getNovelViews();
         novelInformation.rating = this.getNovelRating();
+        novelInformation.source = this.source;
 
         return novelInformation;
     }
