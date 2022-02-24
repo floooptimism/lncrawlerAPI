@@ -14,9 +14,11 @@ class LightNovelDotWorldScraper extends Scraper{
 
     async getNovelInfo(novelURL){
         let page = await this.pageFetcher.fetchPage(novelURL);
-        return callIfElse(this.informationExtractor.parseHTML(page),
+        let res = callIfElse(this.informationExtractor.parseHTML(page),
                           this.informationExtractor.getNovelInformation.bind(this.informationExtractor),
                           () => null);
+        res.url = novelURL;
+        return res;
     }
     
 
