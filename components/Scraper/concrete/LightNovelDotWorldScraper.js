@@ -17,7 +17,7 @@ class LightNovelDotWorldScraper extends Scraper{
         let res = callIfElse(this.informationExtractor.parseHTML(page),
                           this.informationExtractor.getNovelInformation.bind(this.informationExtractor),
                           () => null);
-        res.url = novelURL;
+        if(res) res.url = novelURL;
         return res;
     }
     
